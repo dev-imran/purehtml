@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form_part_2</title>
+</head>
+<body>
+    <h1>Form Five</h1>
+    <hr>
+    <form action="" method="get"> <!--Start of form 5-->
+        <fieldset>
+            <legend>Registration form</legend>
+                <p>University: <input type="text" name="university"></p>
+                <p>Institute: <input type="text" name="institute"></p>
+                <p>Branch: <select name="branch" id="">
+                    <option value="">--Branch--</option>
+                    <option value="brancha">Branch A</option>
+                    <option value="branchb">Branch B</option>
+                </select></p>
+                <p>Degree: <select name="degree" id="">
+                    <option value="">--Degree--</option>
+                    <option value="degreea">Degree A</option>
+                    <option value="degreeb">Degree B</option>
+                    <input type="radio" name="condtn"> Pursuing 
+                    <input type="radio" name="condtn"> Completed
+                </select></p>
+                <p>Average CPI: <input type="number" name="avgcpi" max="5" step="0.1">
+                Upto: <input type="number" name="semester"> Th Semester
+                </p>
+                <p>Experience: <input type="number" name="experience"> Years</p>
+                <p>Your Website or Blog: <input type="url" name="website" value="http://"></p>
+                <button type="submit" value="submit">Submit</button>
+        </fieldset>
+    </form> <!--End of form 5-->
+    <h1>Form Six</h1>
+    <hr>
+    <form action="" method="get">   <!--Start of form 6-->
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" name="fullname">
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">Sex</td>
+                <td rowspan="2">
+                    <input type="radio" value="" name="sex" checked> Male <br>
+                    <input type="radio" value="" name="sex"> Female
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td>Eye Color</td>
+                <td>
+                    <select name="eyecolor" id="">
+                        <option value="">green</option>
+                        <option value="">blue</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">Check all that apply</td>
+                <td rowspan="2">
+                    <input type="checkbox" name="info"> Over 6 feet tall <br>
+                    <input type="checkbox" name="info"> Over 200 pounds
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td colspan="2">Describe your athletic ability:</td>
+  
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="text" id="" cols="40" rows="5"></textarea>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" value="submit">Enter my information</button>
+                </td>
+
+            </tr>
+        </table>
+    </form> <!--End of form 6-->
+    <h1>Form seven</h1>
+    <hr>
+    <h4>Registration form</h4>
+    <form action="" method="post"> <!--Start of form 7-->
+        <P>User ID: <input type="text" name="userid" required placeholder="Required and must be length of 5 to 12"></P>
+        <P>Password: <input type="password" name="password" required placeholder="Required and must be length of 7 to 12"></P>
+        <P>Name: <input type="text" name="fullname" required placeholder="Required and alphabets only"></P>
+        <P>Address: <input type="text" name="address" placeholder="Optional"></P>
+        <p>Country: <select name="country" id="" required>
+            <option value="">(select your county)</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="usa">USA</option>
+        </select></p>
+        <p>Zip code: <input type="number" name="zip" required></p>
+        <p> E-mail: <input type="email" name="email" required></p>
+        <p>Sex: <input type="radio" name="sex" id="" required>Male
+                <input type="radio" name="sex" id="" required>Female
+        </p>
+        <p>Language: <input type="checkbox" name="language" id="" required> English
+            Language: <input type="checkbox" name="language" id="" required> Non English
+        </p>
+        <p>About: <textarea name="about" id="" cols="30" rows="5"></textarea></p>
+        <button type="submit" value="submit">Submit</button>
+    </form> <!--End of form 7-->
+</body>
+</html>
